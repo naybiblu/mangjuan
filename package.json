@@ -1,0 +1,25 @@
+{
+  "name": "Mang Juan",
+  "version": "1.0.0",
+  "keywords": [
+    "pinoy",
+    "philippines",
+    "sugalan",
+    "gambling",
+    "sabungan",
+    "cock-fighting"
+  ],
+  "description": "Sumabong sa gulong ng buhay kasama ako!\n\n[Solve life problems with me using cock-fighting skills!]",
+  "dependencies": {
+    "chalk": "4.0",
+    "child_process": "^1.0.2",
+    "discord.js": "^14.4.0",
+    "dotenv": "^16.0.2",
+    "fs": "^0.0.1-security",
+    "git": "^0.1.5",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.6.1"
+  },
+  "license": "ISC",
+  "main": "handler.js"
+}
