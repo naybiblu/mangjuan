@@ -44,7 +44,7 @@ module.exports = {
 
     let n = chars.length
 
-      for (let i = 0 ; i < len; i++) {
+      for (let i = 0 ; i < length; i++) {
 
         let pos = Math.floor(Math.random() * n + 1);
 
