@@ -79,7 +79,7 @@ module.exports = {
 
             title: `Nanlimos ka sa ${begStat.area}!`,
 
-            description: `Nakakuha ka ng ${guild.settings.currency + begStat.money}. Total: ${guild.settings.currency + (user.money + begStat.money).}`
+            description: `Nakakuha ka ng ${guild.settings.currency + begStat.money}. Total: ${guild.settings.currency + (user.money + begStat.money)}.`
 
             
 
