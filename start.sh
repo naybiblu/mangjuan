@@ -1,8 +1,4 @@
 #!/bin/bash
-git remote -v
-git remote set-url origin https://github.com/naybiblu/mangjuan.git
-git remote -v
-
 echo "------------------
 Adding every file to the stage...
 ------------------"
