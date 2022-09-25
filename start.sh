@@ -1,9 +1,7 @@
 #!/bin/bash
-apt -E install sudo
-
-sudo useradd -u 997 naybiblu
-
-ssh-keygen -t ed25519 -C "your_email@example.com"
+git remote -v
+git remote set-url origin git@github.com:naybiblu/mangjuan.git
+git remote -v
 
 echo "------------------
 Adding every file to the stage...
