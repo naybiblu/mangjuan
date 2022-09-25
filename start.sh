@@ -1,14 +1,16 @@
 #!/bin/bash
-echo "Starting..."
+echo "Adding every file to the stage..."
 
 git add -A
 
-git commit -m Test2
+echo "Committing staged files..."
+
+git commit -m "Testing deployment"
+
+echo "Pushing committed files..."
+
+echo "Please input name & password..."
 
 git push origin master
-
-echo "naybiblu"
-
-echo "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"
 
 node .
