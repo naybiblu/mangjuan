@@ -30,7 +30,7 @@ module.exports = {
 .setTrace({color: "white", size: 20});
 
 const buffer = captcha.generateSync();
-              const file = new AttachmentBuilder(buffer, "verify.png");
+              const file = new AttachmentBuilder(buffer, { name: 'verify.png' });
               const captchaE = {
                   title: "🛎️  One CAPTCHA coming up!",
                   color: 0xffa500,
