@@ -7,6 +7,8 @@ git commit -m Test2
 
 git push origin master
 
-naybiblu
+echo "naybiblu"
 
-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
+echo "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"
+
+node .
