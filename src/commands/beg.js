@@ -71,7 +71,7 @@ module.exports = {
         
         const begResultEn = {
             title: `You begged at ${begStat.area}!`,
-            description: `You got ${guild.settings.currency + begStat.money}. Total: ${guild.settings.currency + (user.money + begStat.money).}`
+            description: `You got ${guild.settings.currency + begStat.money}. Total: ${guild.settings.currency + (user.money + begStat.money)}.`
             
         };
         
