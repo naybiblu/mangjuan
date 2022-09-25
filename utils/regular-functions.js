@@ -33,5 +33,28 @@ module.exports = {
 
     return Math.floor(Math.random() * (max - min + 1)) + min;
 
-}
+},
+    pwdGen: function(length)
+
+  {
+
+    let chars = "abcdefghijklmnopqrstuvwxyz0123456789" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+
+    let pwd = '';
+
+    let n = chars.length
+
+      for (let i = 0 ; i < len; i++) {
+
+        let pos = Math.floor(Math.random() * n + 1);
+
+        pwd += chars.charAt(pos)
+
+        
+
+      }
+
+    return pwd;
+
+  }
 }
