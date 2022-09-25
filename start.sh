@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo port install gh
+
 echo "Adding every file to the stage..."
 
 git add -A
