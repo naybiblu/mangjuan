@@ -1,7 +1,7 @@
 #!/bin/bash
-whoami
 
-adduser --uid 1000 jenkins
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
 
 echo "------------------
 Adding every file to the stage...
