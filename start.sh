@@ -1,6 +1,4 @@
 #!/bin/bash
-npm i captcha-canvas@latest
-
 echo "------------------
 Adding every file to the stage...
 ------------------"
