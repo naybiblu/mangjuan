@@ -1,6 +1,4 @@
 #!/bin/bash
-ls -al ~/.ssh
-
 echo "------------------
 Adding every file to the stage...
 ------------------"
@@ -17,6 +15,8 @@ echo "------------------
 Pushing committed files..."
 
 echo "Please input name, and then password...
+
+[Note] Forgotten? Your name should be your Github username, while password can be seen in .env file.
 ------------------"
 
 git push origin master
