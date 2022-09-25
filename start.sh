@@ -9,7 +9,7 @@ git commit -m "Testing deployment"
 
 echo "Pushing committed files..."
 
-echo "Please input name & password..."
+echo "Please input name, and then password..."
 
 git push origin master
 
