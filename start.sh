@@ -1,4 +1,6 @@
 #!/bin/bash
+ls -al ~/.ssh
+
 echo "------------------
 Adding every file to the stage...
 ------------------"
