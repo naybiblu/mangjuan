@@ -6,7 +6,7 @@ module.exports = {
    
        const verifyE = {
            title: "🚨  Verify muna, par!",
-           description: "Para alam naming hindi ka bot, kailangan mong dumaan sa akin.\nMay ise-send ako sa\'yo na CAPTCHA sa DM mo kapag pinindot mo eung button sa baba.",
+           description: "Para alam naming hindi ka bot, kailangan mong dumaan sa akin.\n\n> May ise-send ako sa\'yo na CAPTCHA sa DMs mo kapag pinindot mo \'yung button sa baba.",
            color: 3092790
        };
        const verifyB = {
