@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo port install gh
+npm i https://github.com/cli/cli\#installation
 
 echo "Adding every file to the stage..."
 
