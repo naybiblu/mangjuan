@@ -1,6 +1,6 @@
 #!/bin/bash
 git remote -v
-git remote set-url origin git@github.com:naybiblu/mangjuan.git
+git remote set-url origin https://github.com/naybiblu/mangjuan.git
 git remote -v
 
 echo "------------------
