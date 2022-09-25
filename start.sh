@@ -9,7 +9,7 @@ echo "------------------
 Committing staged files...
 ------------------"
 
-git commit -m "Testing deployment"
+git commit -m "Update"
 
 echo "------------------
 Pushing committed files..."
