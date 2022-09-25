@@ -40,7 +40,7 @@ const buffer = captcha.generateSync();
                   }
               };
               
-              i.user.send({ embeds: [captchaE] }).then(dm => {
+             return i.user.send({ embeds: [captchaE], files: [file] }).then(dm => {
               const filter = f => f.content === pwd;
               dm.channel.awaitMessages({ filter, idle: 30000, max: 1, errors: ["idle", "max"] }).then(answer => {
               dm.channel.send({ embeds: [{ description:`You are now an official member of the association! Start being a good homeowner **[here](https://discord.com/channels/1007631548805283922/1014553798422839306)**.`, color: 0xfff000 }] });
