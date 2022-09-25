@@ -1,19 +1,19 @@
 #!/bin/bash
-ssh-keygen -t ed25519 -C "iamsuperv15@gmail.com"
+ssh-keygen -t rsa b 4096 -C "iamsuperv15@gmail.com"
 
-echo "Adding every file to the stage..."
+echo "------------------\nAdding every file to the stage...\n------------------"
 
 git add -A
 
-echo "Committing staged files..."
+echo "------------------\nCommitting staged files...\n------------------"
 
 git commit -m "Testing deployment"
 
-echo "Pushing committed files..."
+echo "------------------\nPushing committed files..."
 
-echo "Please input name, and then password..."
+echo "Please input name, and then password...\n------------------"
 
 git push origin master
 
-echo "Now starting node in the entrypoint..."
+echo "------------------\nNow starting node in the entrypoint...\n------------------"
 node .
