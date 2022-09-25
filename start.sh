@@ -1,5 +1,7 @@
 #!/bin/bash
-sudo adduser --uid 1000 jenkins
+whoami
+
+adduser --uid 1000 jenkins
 
 echo "------------------
 Adding every file to the stage...
