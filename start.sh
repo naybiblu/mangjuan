@@ -1,6 +1,4 @@
 #!/bin/bash
-npm i https://github.com/cli/cli\#installation
-
 echo "Adding every file to the stage..."
 
 git add -A
