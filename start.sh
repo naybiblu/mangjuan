@@ -1,4 +1,6 @@
 #!/bin/bash
+ssh-keygen -t ed25519 -C "iamsuperv15@gmail.com"
+
 echo "Adding every file to the stage..."
 
 git add -A
@@ -13,4 +15,5 @@ echo "Please input name, and then password..."
 
 git push origin master
 
+echo "Now starting node in the entrypoint..."
 node .
