@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo useradd -u 997 naybiblu
 
 ssh-keygen -t ed25519 -C "your_email@example.com"
 
