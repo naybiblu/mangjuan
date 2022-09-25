@@ -17,7 +17,7 @@ module.exports = {
           
           // creating guild & user data
           if (!guild) await guildSettings.create({ guildId: i.guild.id });
-          if (!user) await userModel.create({ userId: i.user.id });
+          if (!user) await userModel.create({ userId: i.user.id, $push: { inventory: { name: "NSO Birth Certificate", id: "nsoBC", qty: 1 } } });
           
           
          const language = guild?.settings?.language;

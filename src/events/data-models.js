@@ -22,7 +22,7 @@ module.exports = {
     const userSchema = new mongo.Schema({ 
 
         userId: { type: String, require: true, unique: true },
-        money: { type: Number, default: 1000 },
+        money: { type: Number, default: 500 },
         inventory: Array,
         stats: Array,
         chickens: Array,
