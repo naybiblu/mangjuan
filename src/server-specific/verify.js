@@ -5,8 +5,8 @@ module.exports = {
    async execute (client, message, args) {
    
        const verifyE = {
-           title: "🚨 Alternative Verification",
-           description: "Click the button below for immediate verification while waiting for the CAPTCHA verification to work.",
+           title: "🚨  Verify muna, par!",
+           description: "Para alam naming hindi ka bot, kailangan mong dumaan sa akin.\nMay ise-send ako sa\'yo na CAPTCHA sa DM mo kapag pinindot mo eung button sa baba.",
            color: 3092790
        };
        const verifyB = {

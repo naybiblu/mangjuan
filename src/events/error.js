@@ -32,6 +32,6 @@ process.on("uncaughtExceptionMonitor", (err, origin) => {
 
 });
         
-        console.log(chalk.bold("[NodeJs]: ") + chalk.green.bold("Placed error-proof events."));
+        console.log(chalk.bold("[NodeJs]: ") + chalk.green.bold("Placed error-proof events!"));
     }
 }
