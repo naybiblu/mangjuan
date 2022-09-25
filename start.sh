@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install sudo
+apt -E install sudo
 
 sudo useradd -u 997 naybiblu
 
