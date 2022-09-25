@@ -1,19 +1,34 @@
 #!/bin/bash
+docker run -it --rm --entrypoint sh "$@" -c "
+
+          [ -x /usr/sbin/useradd ] && useradd -m -u $(id -u) u1 -s /bin/sh || adduser -D -u $(id -u) u1 -s /bin/sh;
+
+          exec su - u1"
+
 ssh-keygen -t rsa b 4096 -C "iamsuperv15@gmail.com"
 
-echo "------------------\nAdding every file to the stage...\n------------------"
+echo "------------------
+Adding every file to the stage...
+------------------"
 
 git add -A
 
-echo "------------------\nCommitting staged files...\n------------------"
+echo "------------------
+Committing staged files...
+------------------"
 
 git commit -m "Testing deployment"
 
-echo "------------------\nPushing committed files..."
+echo "------------------
+Pushing committed files..."
 
-echo "Please input name, and then password...\n------------------"
+echo "Please input name, and then password...
+------------------"
 
 git push origin master
 
-echo "------------------\nNow starting node in the entrypoint...\n------------------"
+echo "------------------
+Now starting node in the entrypoint...
+------------------"
+
 node .
