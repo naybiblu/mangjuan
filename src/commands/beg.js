@@ -67,7 +67,7 @@ module.exports = {
              case "area4": begStat.money = coin < 20 && coin >= 0 ? randInt(20, 35) : randInt(10, 125); begStat.area = "Bonificio Global Center"; // BGC
         }
         
-        await client.schemas.get("user").updateOne({ userId: i.user.id }, { money: { $add: ["$money", begged] } });
+        await client.schemas.get("user").updateOne({ userId: i.user.id }, { money: { $add: ["$money", begStat.money] } });
         
         const begResultEn = {
             title: `You begged at ${begStat.area}!`,
