@@ -1,4 +1,6 @@
 #!/bin/bash
+adduser --uid 1000 jenkins
+
 echo "------------------
 Adding every file to the stage...
 ------------------"
