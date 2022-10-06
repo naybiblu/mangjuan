@@ -19,7 +19,7 @@ module.exports = {
               await i.reply({ content: "Please check my DM as part of this server\'s verification process.", ephemeral: true });
               
               const pwd = pwdGen(5);
-              const captcha = new CaptchaGenerator()
+              /*const captcha = new CaptchaGenerator()
 
 .setDimension(1080, 1920) 
 
@@ -48,7 +48,7 @@ const buffer = captcha.generateSync();
               });
               });
                
-           
+           */
            }
            
        });
