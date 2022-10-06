@@ -36,7 +36,7 @@ const buffer = captcha.generateSync();*/
               const captchaE = {
                   title: "🛎️  One CAPTCHA coming up!",
                   color: 0xffa500,
-                  description: `Kindly type the __**striked-through letters**__ below __**from left to right**__. Please mind the sensitivity of the CAPTCHA.\n\n**Error?** Try another CAPTCHA by clicking the **[verify button](${i.message.url})** in the server channel.`,
+                  description: `Kindly type the __**capital letters**__ below __**from left to right**__. Please mind the sensitivity of the CAPTCHA.\n\n**Error?** Try another CAPTCHA by clicking the **[verify button](${i.message.url})** in the server channel.`,
                   image: {
                      url: "attachment://verify.png"
                   }
