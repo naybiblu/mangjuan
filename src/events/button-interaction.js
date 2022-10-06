@@ -1,5 +1,5 @@
-const { pwdGen } = require("./../../utils/regular-functions.js");
-//const { CaptchaGenerator } = require("captcha-canvas");
+//const { pwdGen } = require("./../../utils/regular-functions.js");
+const Captcha = require("@haileybot/captcha-generator");
 const { AttachmentBuilder} = require("discord.js");
 
 module.exports = {
@@ -18,7 +18,9 @@ module.exports = {
               // draft CAPTCHA verification
               await i.reply({ content: "Please check my DM as part of this server\'s verification process.", ephemeral: true });
               
-              const pwd = pwdGen(5);
+              const captcha = new Captcha();
+              const pwd = captcha.value;
+              //const pwd = pwdGen(5);
               /*const captcha = new CaptchaGenerator()
 
 .setDimension(1080, 1920) 
@@ -29,8 +31,8 @@ module.exports = {
 
 .setTrace({color: "white", size: 20});
 
-const buffer = captcha.generateSync();
-              const file = new AttachmentBuilder(buffer, { name: 'verify.png' });
+const buffer = captcha.generateSync();*/
+              const file = new AttachmentBuilder(captcha.JPEGStream, { name: 'verify.png' });
               const captchaE = {
                   title: "🛎️  One CAPTCHA coming up!",
                   color: 0xffa500,
@@ -42,13 +44,13 @@ const buffer = captcha.generateSync();
               
              return i.user.send({ embeds: [captchaE], files: [file] }).then(dm => {
               const filter = f => f.content === pwd;
-              dm.channel.awaitMessages({ filter, idle: 30000, max: 1, errors: ["idle", "max"] }).then(answer => {
+              dm.channel.awaitMessages({ filter, idle: 60000, max: 1 }).then(answer => {
               dm.channel.send({ embeds: [{ description:`You are now an official member of the association! Start being a good homeowner **[here](https://discord.com/channels/1007631548805283922/1014553798422839306)**.`, color: 0xfff000 }] });
               i.member.roles.add("1013333281065930792");
               });
               });
                
-           */
+           
            }
            
        });
