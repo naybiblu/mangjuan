@@ -14,7 +14,7 @@
   },
   "description": "Sumabong sa gulong ng buhay kasama ako!\n\n[Solve life problems with me using cock-fighting skills!]",
   "dependencies": {
-    
+    "@haileybot/captcha-generator": "1.7.0",
     "chalk": "4.0",
     "child_process": "^1.0.2",
     "discord.js": "^14.4.0",
