@@ -9,6 +9,9 @@
     "sabungan",
     "cock-fighting"
   ],
+  "scripts": {
+    "start": "node ."
+  },
   "description": "Sumabong sa gulong ng buhay kasama ako!\n\n[Solve life problems with me using cock-fighting skills!]",
   "dependencies": {
     "captcha-canvas": "^3.2.1",
