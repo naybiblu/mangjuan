@@ -10,6 +10,6 @@ module.exports = {
           color: 0xff0000
       }]});
       
-      eval(arg.replace("\`\`\`js", "").replace("\`\`\`", ""));
+      eval(`(async () => {${arg.replace("\`\`\`js", "").replace("\`\`\`", "")}})()`);
     }
 }
