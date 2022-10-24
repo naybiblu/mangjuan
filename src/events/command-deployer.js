@@ -31,9 +31,9 @@ module.exports = {
 
 		const data = await rest.put(
 
-			Routes.applicationGuildCommands("874325413927739392", "880069748740735026"),
+			Routes.applicationCommands("874325413927739392"),
 
-			{ body: [] },
+			{ body: commands },
 
 		);
 
