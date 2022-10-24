@@ -33,7 +33,7 @@ module.exports = {
 
 			Routes.applicationCommands("874325413927739392"),
 
-			{ body: commands },
+			{ body: [] },
 
 		);
 
