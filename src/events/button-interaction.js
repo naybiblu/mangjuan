@@ -21,7 +21,7 @@ module.exports = {
               const captcha = new Captcha();
               const pwd = captcha.value;
               //const pwd = pwdGen(5);
-              /*const captcha = new CaptchaGenerator()
+              // const captcha = new CaptchaGenerator()
 
 .setDimension(1080, 1920) 
 
@@ -31,7 +31,7 @@ module.exports = {
 
 .setTrace({color: "white", size: 20});
 
-const buffer = captcha.generateSync();*/
+const buffer = captcha.generateSync();//
               const file = new AttachmentBuilder(captcha.JPEGStream, { name: 'verify.png' });
               const captchaE = {
                   title: "🛎️  One CAPTCHA coming up!",
