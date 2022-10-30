@@ -1,5 +1,5 @@
 //const { pwdGen } = require("./../../utils/regular-functions.js");
-const Captcha = require("@haileybot/captcha-generator");
+// const Captcha = require("@haileybot/captcha-generator");
 const { AttachmentBuilder} = require("discord.js");
 
 module.exports = {
