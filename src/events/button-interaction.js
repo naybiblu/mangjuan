@@ -12,7 +12,7 @@ module.exports = {
            if (!i.isButton()) return;
            
            // DHA's verify button
-           if (i.customId === "vDHA") {
+           /*if (i.customId === "vDHA") {
               if (i.member.roles.cache.has("1013333281065930792")) return i.reply({ content: "Homeowner ka na kaya! Tsupe!", ephemeral: true });
                
               // draft CAPTCHA verification
@@ -51,7 +51,7 @@ const buffer = captcha.generateSync();*/
               });
                
            
-           }
+           }*/
            
        });
        
