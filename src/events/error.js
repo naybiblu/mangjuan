@@ -10,7 +10,7 @@ module.exports = {
           dev.send({
             embeds: [{
               title: `⚠️ ${title}`,
-              description: `\`\`\`\n${err}\n${!origin ? null : origin}\`\`\``,
+              description: `\`\`\`\n${err}\n${!origin ? "" : origin}\`\`\``,
               color: 0xff0000
             }]
           });
