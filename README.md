@@ -11,4 +11,4 @@ Earn money to buy things such as valid IDs (for opening bank accounts) or to pur
 ***
 
 
-> This bot is still on development. Sakit kaya sa ulo mag-code, hahahahaha.
+> This bot is still on development. Sakit kaya sa ulo mag-code, hahahahahaha.
