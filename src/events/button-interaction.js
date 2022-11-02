@@ -1,5 +1,4 @@
-//const { pwdGen } = require("./../../utils/regular-functions.js");
-// const Captcha = require("@haileybot/captcha-generator");
+const { Captcha } = require("captcha.gif");
 const { AttachmentBuilder} = require("discord.js");
 
 module.exports = {
@@ -12,27 +11,15 @@ module.exports = {
            if (!i.isButton()) return;
            
            // DHA's verify button
-           /*if (i.customId === "vDHA") {
+           if (i.customId === "vDHA") {
               if (i.member.roles.cache.has("1013333281065930792")) return i.reply({ content: "Homeowner ka na kaya! Tsupe!", ephemeral: true });
                
-              // draft CAPTCHA verification
-              await i.reply({ content: "Please check my DM as part of this server\'s verification process.", ephemeral: true });
               
+              await i.reply({ content: "Please check my DM as part of this server\'s verification process.", ephemeral: true });
+          
               const captcha = new Captcha();
-              const pwd = captcha.value;
-              //const pwd = pwdGen(5);
-              // const captcha = new CaptchaGenerator()
-
-.setDimension(1080, 1920) 
-
-.setCaptcha({characters: 5, text: pwd, size: 200, color: "white", skew: false})
-
-.setDecoy({size: 150, opacity: 0.8, total: 10})
-
-.setTrace({color: "white", size: 20});
-
-const buffer = captcha.generateSync();//
-              const file = new AttachmentBuilder(captcha.JPEGStream, { name: 'verify.png' });
+              const { token: pwd, buffer } = captcha.generate();
+              const file = new AttachmentBuilder(buffer, { name: 'verify.png' });
               const captchaE = {
                   title: "🛎️  One CAPTCHA coming up!",
                   color: 0xffa500,
@@ -51,7 +38,7 @@ const buffer = captcha.generateSync();//
               });
                
            
-           }*/
+           }
            
        });
        
