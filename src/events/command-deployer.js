@@ -21,7 +21,7 @@ module.exports = {
       }
        
       const rest = new REST({ version: '10' }).setToken(process.env.dcToken);
-       
+       console.log(process.env.dcToken)
       (async () => {
           
           try {
