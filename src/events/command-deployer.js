@@ -1,4 +1,4 @@
-/*const { REST, Routes } = require("discord.js");
+const { REST, Routes } = require("discord.js");
 const fs = require("fs");
 const chalk = require("chalk");
 require("dotenv").config();
@@ -8,7 +8,7 @@ module.exports = {
    type: "public",
    async execute(client) {
    
-      const commands = [];
+     /* const commands = [];
       const comFiles = fs.readdirSync("./src/commands/").filter(file => file.endsWith(".js"));
       const guildId = "880069748740735026";
        
@@ -42,8 +42,7 @@ module.exports = {
 		console.log(chalk.bold("[Discord REST]: ") + chalk.red.bold("Failed deploying slash command(s) due to:"));
         console.error(error);
 
-	}
+	}*/
    
    }
 }
-*/
