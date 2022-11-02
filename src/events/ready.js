@@ -11,7 +11,7 @@ module.exports = {
            
           client.user.setPresence({ activities: [{ name: `/help | ${client.guilds.cache.size} server${client.guilds.cache.size > 1 ? "s" : ""}` }], status: "idle" });
 
-       
+          client.channels.fetch('880834479453777920').then(memCount => memCount.edit({name: `Hausmeyts: ${client.guilds.cache.get('880069748740735026').memberCount}`})).catch(err => console.log(err));
        });
        
     }
