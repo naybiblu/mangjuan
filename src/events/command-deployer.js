@@ -1,4 +1,4 @@
-const { REST, Routes } = require("discord.js");
+/*const { REST, Routes } = require("discord.js");
 const fs = require("fs");
 const chalk = require("chalk");
 require("dotenv").config();
@@ -20,7 +20,7 @@ module.exports = {
           
       }
        
-      const rest = new REST({ version: '10' }).setToken(`${process.env.dcToken}`);
+      const rest = new REST({ version: '10' }).setToken(process.env.dcToken);
           
           try {
 
@@ -46,3 +46,4 @@ module.exports = {
    
    }
 }
+*/
