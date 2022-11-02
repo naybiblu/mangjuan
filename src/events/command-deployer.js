@@ -21,32 +21,28 @@ module.exports = {
       }
        
       const rest = new REST({ version: '10' }).setToken(process.env.dcToken);
-       console.log(process.env.dcToken)
-      (async () => {
           
           try {
 
 		console.log(chalk.bold("[Discord REST]: ") + chalk.yellow.bold(`Deploying ${commands.length} slash command${commands.length > 1 ? "s" : ""}...`));
  
 
-		const data = await rest.put(
+		rest.put(
 
 			Routes.applicationCommands("874325413927739392"),
 
 			{ body: commands },
 
-		);
+		).then(data => {
 
 		console.log(chalk.bold("[Discord REST]: ") + chalk.green.bold(`Succesfully deployed ${data.length} slash command${commands.length > 1 ? "s" : ""}!`));
-
+		});
 	} catch (error) {
 
 		console.log(chalk.bold("[Discord REST]: ") + chalk.red.bold("Failed deploying slash command(s) due to:"));
         console.error(error);
 
 	}
-          
-      })();
    
    }
 }
