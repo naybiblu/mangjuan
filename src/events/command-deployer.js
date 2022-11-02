@@ -1,4 +1,4 @@
-const { REST, Routes } = require("discord.js");
+//const { REST, Routes } = require("discord.js");
 const fs = require("fs");
 const chalk = require("chalk");
 require("dotenv").config();
