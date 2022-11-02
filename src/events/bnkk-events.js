@@ -4,6 +4,7 @@ module.exports = {
   async execute(client) {
     
     const chanId = '880069748740735029';
+    const guild = "880069748740735026";
     client.on("guildMemberAdd", async member => {
     
       if (!member) return;
