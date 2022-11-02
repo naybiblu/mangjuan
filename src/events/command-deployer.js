@@ -20,7 +20,7 @@ module.exports = {
           
       }
        
-      const rest = new REST({ version: '10' }).setToken(process.env.dcToken);
+      const rest = new REST({ version: '10' }).setToken(`${process.env.dcToken}`);
           
           try {
 
