@@ -39,6 +39,7 @@ const eventFolder = fs.readdirSync(__dirname + "/src/events/").filter(file => fi
 for (const events of eventFolder) {
 
 const event = require(__dirname + `/src/events/${events}`);
+    if (events.includes("deployer")) return;
   //if (event.type === "public") {
 
 event.execute(client);
