@@ -10,6 +10,7 @@ module.exports = {
           color: 0xff0000
       }]});
       
+      message.react("👁️");
       eval(`(async () => {${arg.replace("\`\`\`js", "").replace("\`\`\`", "").replace("\n", "")}})()`);
     }
 }
