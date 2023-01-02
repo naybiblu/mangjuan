@@ -7,7 +7,7 @@ module.exports = {
     type: "public",
     async execute(client) {
         
-        mongo.connect(`mongodb+srv://Iamsuperv_15:${mongoUname}@mangjuan.2xw8v0q.mongodb.net/?retryWrites=true&w=majority`);
+        mongo.connect(`mongodb+srv://Iamsuperv_15:${process.env.mongoUname}@mangjuan.2xw8v0q.mongodb.net/?retryWrites=true&w=majority`);
 
 		mongo.Promise = global.Promise;
         
