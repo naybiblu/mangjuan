@@ -16,7 +16,7 @@ module.exports = {
           
           const slash = require(`./../commands/${com}`);
           
-          commands.push(slash.data);
+          commands.push(JSON.stringify(slash.data));
           
       }
        
