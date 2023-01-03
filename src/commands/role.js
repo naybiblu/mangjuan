@@ -41,7 +41,7 @@ module.exports = {
     }
     
     i.reply({embeds: [{
-      description: `✅ **${role.name}** had been ${subcommand}${subcommand.includes("add") ? "ed" : "d"} from ${target}!`,
+      description: `✅ **${role.name}** had been ${subcommand}${subcommand.includes("add") ? "ed" : "d"} from ${target.tag}!`,
       color: 0xffff00
     }]});
     
