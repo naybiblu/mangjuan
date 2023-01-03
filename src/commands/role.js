@@ -36,11 +36,11 @@ module.exports = {
     
     switch (subcommand) {
       case "remove": i.guild.members.removeRole( target, { role }); break;
-      default: i.guild.members.addRole({ target, { role });
+      default: i.guild.members.addRole( target, { role });
     }
     
     i.reply({embeds: [{
-      title: `✅ ${role.name} had been ${subcommand}ed from ${target}!`,
+      description: `✅ **${role.name}**  had been ${subcommand}ed from ${target}!`,
       color: 0xffff00
     }]});
     
