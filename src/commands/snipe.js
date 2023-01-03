@@ -13,7 +13,7 @@ module.exports = {
     i.reply({embeds: [{
       author: {
         name: snipe.author.tag,
-        icon_url: snipe.member.displayAvatarURL({ dynamic: true })
+        icon_url: snipe.author.displayAvatarURL({ dynamic: true })
       },
       description: snipe.content,
       color: snipe.author.hexAccentColor,
