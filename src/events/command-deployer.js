@@ -16,7 +16,7 @@ module.exports = {
           
           const slash = require(`./../commands/${com}`);
           
-          commands.push(["beg", "settings", "test"].includes(slash.data?.name) ? slash.data : JSON.stringify(slash.data));
+          commands.push(["beg", "settings", "test"].includes(slash.data?.name) ? slash.data : slash.data.toJSON());
           
       }
        
