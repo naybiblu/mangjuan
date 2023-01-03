@@ -6,7 +6,7 @@ module.exports = {
     client.on("messageDelete", async message => {
       client.snipes.set(message.id, {...message});
     })
-    .on("messageUpdated", async (old, new) => {
+    .on("messageUpdate", async (old, recent) => {
       client.snipes.set(old.id, {...old});
     });
     
