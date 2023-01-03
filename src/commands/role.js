@@ -40,7 +40,7 @@ module.exports = {
     }
     
     i.reply({embeds: [{
-      title: `✅ ${role} had been ${subcommand}ed from ${target}!`,
+      title: `✅ ${role.name} had been ${subcommand}ed from ${target}!`,
       color: 0xffff00
     }]});
     
