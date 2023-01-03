@@ -8,7 +8,7 @@ module.exports = {
   type: "GuildText",
   async execute (client, i, language, guild, user) {
     
-    const snipe = client.snipes.first();
+    const snipe = client.snipes.filter(s => s.guild === i.guild.id).first();
     
     if (!snipe) return i.reply({embeds: [{
       description: "There is no recent message(s) that had been deleted or edited in this server.",

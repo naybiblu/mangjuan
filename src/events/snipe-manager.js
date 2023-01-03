@@ -4,10 +4,10 @@ module.exports = {
   async execute(client) {
     
     client.on("messageDelete", async message => {
-      client.snipes.set(message.id, {...message, authorIcon: message.member.displayAvatarURL({dynamic: true})});
+      client.snipes.set(message.id, {...message, authorIcon: message.member.displayAvatarURL({dynamic: true}), guild: message.guild.id});
     })
     .on("messageUpdate", async (old, recent) => {
-      client.snipes.set(old.id, {...old, authorIcon: old.member.displayAvatarURL({dynamic: true})});
+      client.snipes.set(old.id, {...old, authorIcon: old.member.displayAvatarURL({dynamic: true}), guild: old.guild.id});
     });
     
   }
