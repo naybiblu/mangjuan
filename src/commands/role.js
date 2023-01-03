@@ -31,6 +31,7 @@ module.exports = {
     const subcommand = i.options.getSubcommand();
     const role = i.options.getRole("role");
     const target = i.options.getUser("user");
+    console.log(subcommand + role)
     
     switch (subcommand) {
       case "remove": i.guild.members.removeRole(target, role); break;
