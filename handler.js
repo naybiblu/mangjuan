@@ -18,6 +18,7 @@ const commands = fs.readdirSync(__dirname + '/src/commands/').filter(file => fil
 for (const command of commands) {
     
     const slash = require(__dirname + `/src/commands/${command}`);
+    console.log(slash.data.name)
     client.commands.set(slash.data.name, slash);
     
     }
