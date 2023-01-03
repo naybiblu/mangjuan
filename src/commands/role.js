@@ -30,15 +30,13 @@ module.exports = {
   type: "GuildText",
   async execute (client, i, language, guild, user) {
     
-    console.log("test")
-    
     const subcommand = i.options.getSubcommand();
     const role = i.options.getRole("role");
     const target = i.options.getUser("user");
     
     switch (subcommand) {
-      case "remove": i.guild.members.removeRole(target, role); break;
-      default: i.guild.members.addRole(target, role);
+      case "remove": i.guild.members.removeRole({ target, role }); break;
+      default: i.guild.members.addRole({ target, role });
     }
     
     i.reply({embeds: [{
