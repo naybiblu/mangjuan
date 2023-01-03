@@ -30,15 +30,15 @@ module.exports = {
     
     const subcommand = i.options.getSubcommand();
     const role = i.options.getRole("role");
-    const user = i.options.getUser("user");
+    const target = i.options.getUser("user");
     
     switch (subcommand) {
-      case "remove": i.guild.members.removeRole(user, role); break;
-      default: i.guild.members.addRole(user, role);
+      case "remove": i.guild.members.removeRole(target, role); break;
+      default: i.guild.members.addRole(target, role);
     }
     
     i.reply({embeds: [{
-      title: `✅ ${role} had been ${subcommand}ed from ${user}!`,
+      title: `✅ ${role} had been ${subcommand}ed from ${target}!`,
       color: 0xffff00
     }]});
     
