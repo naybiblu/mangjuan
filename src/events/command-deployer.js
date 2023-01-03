@@ -16,7 +16,7 @@ module.exports = {
           
           const slash = require(`./../commands/${com}`);
           
-          commands.push(slash.data);
+          commands.push(slash.data.toJSON());
           
       }
        
@@ -29,7 +29,7 @@ module.exports = {
 
 		rest.put(
 
-			Routes.applicationCommands("874325413927739392"),
+			Routes.applicationGuildCommands("874325413927739392", guildId),
 
 			{ body: commands },
 
