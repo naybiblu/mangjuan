@@ -4,10 +4,10 @@ module.exports = {
   async execute(client) {
     
     client.on("messageDelete", async message => {
-      client.snipes.set(message.id, {...message});
+      client.snipes.set(message.id, {...message, authorIcon: message.member.displayAvatarURL({dynamic: true})});
     })
     .on("messageUpdate", async (old, recent) => {
-      client.snipes.set(old.id, {...old});
+      client.snipes.set(old.id, {...old, authorIcon: old.member.displayAvatarURL({dynamic: true})});
     });
     
   }

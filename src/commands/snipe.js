@@ -9,11 +9,11 @@ module.exports = {
   async execute (client, i, language, guild, user) {
     
     const snipe = client.snipes.first();
+    console.log(snipe.author)
     
     i.reply({embeds: [{
       author: {
-        name: snipe.author.tag,
-        icon_url: snipe.author.displayAvatarURL({ dynamic: true })
+        name: snipe.author.tag
       },
       description: snipe.content,
       color: snipe.author.hexAccentColor,
