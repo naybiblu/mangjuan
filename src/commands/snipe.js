@@ -9,11 +9,16 @@ module.exports = {
   async execute (client, i, language, guild, user) {
     
     const snipe = client.snipes.first();
-    console.log(snipe.author)
+    
+    if (!snipe) return i.reply({embeds: [{
+      description: "There is no recent message(s) that had been deleted or edited in this server.",
+      color: 0xff0000
+    }]});
     
     i.reply({embeds: [{
       author: {
-        name: snipe.author.tag
+        name: snipe.author.tag,
+        icon_url: snipe.authorIcon
       },
       description: snipe.content,
       color: snipe.author.hexAccentColor,
