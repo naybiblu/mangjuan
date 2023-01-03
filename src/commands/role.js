@@ -26,12 +26,15 @@ module.exports = {
             .setName("user")
             .setDescription("The target of this action.")
             .setRequired(true))),
+  permissions: [],
+  type: "GuildText",
   async execute (client, i, language, guild, user) {
+    
+    console.log("test")
     
     const subcommand = i.options.getSubcommand();
     const role = i.options.getRole("role");
     const target = i.options.getUser("user");
-    console.log(subcommand + role)
     
     switch (subcommand) {
       case "remove": i.guild.members.removeRole(target, role); break;
