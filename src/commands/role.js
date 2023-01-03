@@ -7,26 +7,26 @@ module.exports = {
         .addSubcommand(sc => sc
           .setName("remove")
           .setDescription("Remove a role from someone.")
-          .addRoleOption(o => o
-            .setName("role")
-            .setDescription("Role to be removed from someone.")
-            .setRequired(true))
           .addUserOption(o => o
             .setName("user")
             .setDescription("The target of this action.")
+            .setRequired(true))
+          .addRoleOption(o => o
+            .setName("role")
+            .setDescription("Role to be removed from someone.")
             .setRequired(true)))
         .addSubcommand(sc => sc
           .setName("add")
           .setDescription("Add a role from someone.")
-          .addRoleOption(o => o
-            .setName("role")
-            .setDescription("Role to be added from someone.")
-            .setRequired(true))
           .addUserOption(o => o
             .setName("user")
             .setDescription("The target of this action.")
+            .setRequired(true))
+          .addRoleOption(o => o
+            .setName("role")
+            .setDescription("Role to be added from someone.")
             .setRequired(true))),
-  permissions: [],
+  permissions: ["ModerateMembers", "BanMembers", "KickMembers"],
   type: "GuildText",
   async execute (client, i, language, guild, user) {
     
