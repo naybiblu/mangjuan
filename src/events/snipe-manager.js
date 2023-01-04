@@ -7,8 +7,7 @@ module.exports = {
       client.snipes.set(message.id, {...message, 
         authorIcon: message.member.displayAvatarURL({dynamic: true}), 
         guild: message.guild.id, 
-        channel: message.channel.id,
-        message: message.content
+        channel: message.channel.id
       });
     })
     .on("messageUpdate", async (old, recent) => {
@@ -16,8 +15,7 @@ module.exports = {
         ...old, 
         authorIcon: old.member.displayAvatarURL({dynamic: true}), 
         guild: old.guild.id, 
-        channel: old.channel.id,
-        message: old.content
+        channel: old.channel.id
       });
     });
     
