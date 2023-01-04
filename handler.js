@@ -10,7 +10,7 @@ const client = new Discord.Client({
 
 // INITIALIZING COLLECTIONS AND OTHER OBJECTS
 client.commands = new Discord.Collection();
-client.schemas = new Discord.Collection();
+client.schemas = new Discord.Collection(); 
 client.snipes = new Discord.Collection();
 
 // SETTING SLASH COMMANDS

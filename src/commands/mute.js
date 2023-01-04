@@ -26,7 +26,7 @@ module.exports = {
     
     i.guild.members.resolve(target).timeout(time);
     i.reply({embeds: [{
-      description: `🦶 **${name}** had been muted for ${time}ms!`,
+      description: `✅ **${target.tag}** had been muted for ${time}ms!`,
       color: 0xffff00
     }]});
     

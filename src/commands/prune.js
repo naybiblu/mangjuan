@@ -22,11 +22,11 @@ module.exports = {
       cache: false
     });
     
-    if (user) messages = messages.filter(m => m.author === user);
+    if (target) messages = messages.filter(m => m.author === target);
     
     i.channel.bulkDelete(messages, true);
     i.reply({embeds: [{
-      description: `✅ **${count}** messages ${user ? `from **${user.tag}**` : ""} had been deleted on this channel!`,
+      description: `✅ **${count}** messages ${target ? `from **${target.tag}**` : ""} had been deleted on this channel!`,
       color: 0xffff00
     }]});
     

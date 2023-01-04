@@ -21,7 +21,7 @@ module.exports = {
           
           
          const language = guild?.settings?.language;
-	       const command = client.commands.get(i.commandName);
+  	       const command = client.commands.get(i.commandName);
     
     try {
         
