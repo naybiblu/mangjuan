@@ -20,7 +20,7 @@ module.exports = {
         name: snipe.author.tag,
         icon_url: snipe.authorIcon
       },
-      description: snipe.content,
+      description: snipe.message,
       color: snipe.author.hexAccentColor,
       timestamp: new Date(snipe.createdTimestamp).toISOString()
     }]});
