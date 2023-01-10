@@ -10,7 +10,7 @@ module.exports = {
     
     const snipe = client.snipes.filter(s => s.guild === i.guild.id).get(i.channel.id);
     
-    if (!snipe) return i.reply({embeds: [{
+    if (!snipe || snipe.author.bot) return i.reply({embeds: [{
       description: "There is no recent message(s) that had been deleted or edited in this channel.",
       color: 0xff0000
     }]});
@@ -20,9 +20,9 @@ module.exports = {
         name: snipe.author.tag,
         icon_url: snipe.member.displayAvatarURL({ dynamic: true })
       },
-      description: snipe.content,
+      description: snipe.content ?? snipe.embeds.map(e => e.description).join("\n"),
       color: snipe.author.hexAccentColor,
-      timestamp: new Date(snipe.createdTimestamp).toISOString()
+      timestamp: new Date(snipe.timestamp).toISOString()
     }]});
     
   }
