@@ -22,7 +22,10 @@ module.exports = {
       },
       description: snipe.content ?? snipe.embeds.map(e => e.description).join("\n"),
       color: snipe.author.hexAccentColor,
-      timestamp: new Date(snipe.timestamp).toISOString()
+      timestamp: new Date(snipe.timestamp).toISOString(),
+      image: {
+        url: snipe.media
+      }
     }]});
     
   }

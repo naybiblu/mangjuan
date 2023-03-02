@@ -10,7 +10,8 @@ module.exports = {
         member: message.member,
         embeds: message.embeds,
         guild: message.guild.id,
-        timestamp: message.createdTimestamp
+        timestamp: message.createdTimestamp,
+        media: message.attachments.first() ? message.attachments.first().proxyURL : null
       });
     })
     .on("messageUpdate", async (old, recent) => {
@@ -20,7 +21,8 @@ module.exports = {
         member: old.member,
         embeds: old.embeds,
         guild: old.guild.id,
-        timestamp: old.createdTimestamp
+        timestamp: old.createdTimestamp,
+        media: message.attachments.first() ? message.attachments.first().proxyURL : null
       });
     });
     

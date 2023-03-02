@@ -10,7 +10,7 @@ const client = new Discord.Client({
 
 // INITIALIZING COLLECTIONS AND OTHER OBJECTS
 client.commands = new Discord.Collection();
-client.schemas = new Discord.Collection(); 
+client.schemas = new Discord.Collection();
 client.snipes = new Discord.Collection();
 
 // SETTING SLASH COMMANDS
@@ -19,7 +19,6 @@ const commands = fs.readdirSync(__dirname + '/src/commands/').filter(file => fil
 for (const command of commands) {
     
     const slash = require(__dirname + `/src/commands/${command}`);
-    console.log(slash.data.name)
     client.commands.set(slash.data.name, slash);
     
     }
