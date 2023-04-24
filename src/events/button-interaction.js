@@ -12,9 +12,10 @@ module.exports = {
            
            // DHA's verify button
            if (i.customId === "vDHA") {
+             console.log("hi")
               if (i.member.roles.cache.has("1013333281065930792")) return i.reply({ content: "Homeowner ka na kaya! Tsupe!", ephemeral: true });
                
-              
+              console.log("hi")
               await i.reply({ content: "Please check my DM as part of this server\'s verification process.", ephemeral: true });
           
               const captcha = new Captcha();
