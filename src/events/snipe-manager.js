@@ -22,7 +22,7 @@ module.exports = {
         embeds: old.embeds,
         guild: old.guild.id,
         timestamp: old.createdTimestamp,
-        media: message.attachments.first() ? message.attachments.first().proxyURL : null
+        media: old.attachments.first() ? old.attachments.first().proxyURL : null
       });
     });
     
